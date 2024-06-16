@@ -27,7 +27,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 const openai = new OpenAI({
-  apiKey: "sk-proj-ElYkymL28xT4mmoVyntpT3BlbkFJB0o6BKJSuW5U7jUKxuLB", // process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 app.use(cors());
